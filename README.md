@@ -5,9 +5,21 @@ Este projeto implementa uma API de LLM (Large Language Model) para responder a p
 ## 📌 Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
 - Git
+```bash
+sudo apt update && sudo apt install -y git
+```
 - Python 3.x
+```bash
+sudo apt update && sudo apt install -y python3
+```
 - pip
+```bash
+sudo apt update && sudo apt install -y python3-pip
+```
 - WSL - Subsistema Linux
+```bash
+wsl --install
+```
 
 ## 🚀 Primeiros Passos
 
@@ -47,6 +59,7 @@ curl -X POST "http://localhost:8081/chat" \
 ## 📄 Estrutura do Projeto
 ```
 mlops_project_llm_rag_v1/
+├── venv/                   # Ambiente virtual (não incluído no repositório)
 ├── requirements.txt        # Dependências do projeto
 ├── llm.py                  # Código principal da API LLM
 ├── README.md               # Este arquivo
