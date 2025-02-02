@@ -30,7 +30,7 @@ git clone https://github.com/rianbl/mlops_project_llm_rag_v1.git
 cd mlops_project_llm_rag_v1
 ```
 
-### Observação: Não esqueça de acrescentar o seu token do HuggingFace na variável.
+### Observação: Não esqueça de acrescentar o seu token do HuggingFace na variável HF_API_TOKEN do llm.py
 
 ### 2️⃣ Configure um ambiente virtual
 Crie e ative um ambiente virtual Python para gerenciar dependências isoladamente:
