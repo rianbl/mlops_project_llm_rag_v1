@@ -24,7 +24,6 @@ if not HF_API_TOKEN:
     logger.error("Token da API do Hugging Face não foi definido! Certifique-se de configurar a variável HF_API_TOKEN.")
     raise ValueError("HF_API_TOKEN não pode estar vazia.")
 
-
 def query_hf_api(payload, retries=2, delay=10):
     headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
     
