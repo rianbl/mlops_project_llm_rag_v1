@@ -25,7 +25,7 @@ if not HF_API_TOKEN:
     raise ValueError("HF_API_TOKEN não pode estar vazia.")
 
 
-def query_hf_api(payload, retries=2, delay=5):
+def query_hf_api(payload, retries=2, delay=10):
     headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
     
     for attempt in range(retries):
