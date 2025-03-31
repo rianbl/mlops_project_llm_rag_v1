@@ -9,7 +9,7 @@ HF_API_URL = "https://api-inference.huggingface.co/models/meta-llama/Llama-3.2-3
 
 HF_API_TOKEN = "seu_token"
 
-def query_hf_api(payload, retries=2, delay=5):
+def query_hf_api(payload, retries=3, delay=5):
     headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
     
     for attempt in range(retries):
